@@ -6,7 +6,7 @@
 class Video {
 public:
     virtual void play() = 0;
-    virtual ~Video() = default; 
+    ~Video() = default;
 };
 
 // Concrete video classes
@@ -84,9 +84,8 @@ int main() {
         premiumVideoProxy->play();  // Proxy: Playing premium video: Premium Video 1
         freeVideoProxy->play();     // Proxy: Playing free video: Free Video 1
         
-        std::cout << "bye" << std::endl;
     }
-std::cout << "bdye" << std::endl;
+    std::cout << "bye" << std::endl;
     return 0;
 }
 
